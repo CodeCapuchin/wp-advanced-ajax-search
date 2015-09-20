@@ -1,2 +1,4 @@
 # wp-advanced-ajax-search
 Advanced AJAX search using WordPress custom post types and custom taxonomies
+
+This example is for a job listing directory WordPress site. The site uses a child of the AppThemes' Vantage theme, hence some of the funkiness. The search returns only "listing" post-type results. Archive-listing.php calls the listings.php template part (I did it this way because other theme files also call this template part). The search form itself resides in header.php so that it appears on every page of the site. The results container (#search-results) resides in listings.php, which uses AJAX to call advanced_search.php, which is where all the real work is done. The four custom taxonomies in play are "industry," "listing_category," "designation" and "ownership." Search parameters are stored in Session variables for UX purposes.
